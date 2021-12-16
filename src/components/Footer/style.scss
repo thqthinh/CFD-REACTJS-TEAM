@@ -1,0 +1,20 @@
+@import "../../assets/styles/styles.scss";
+
+.footer {
+  padding-top: 100px;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    &-list {
+      text-align: left;
+      .category__title {
+        margin-bottom: 16px;
+      }
+      .category__item {
+        .item {
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+}
