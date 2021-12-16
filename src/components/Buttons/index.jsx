@@ -5,7 +5,6 @@ function Button({
   children,
   color = "default",
   background = "default",
-
   size = "small",
   type = "default",
   round = false,

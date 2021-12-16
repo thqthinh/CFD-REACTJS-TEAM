@@ -1,5 +1,6 @@
 import "./SpaceHeading.scss";
 import { IconArrowRightGreenSmall } from "../../components/Icon";
+import Buttons from "../Buttons";
 
 function SpaceHeading() {
   return (
@@ -8,10 +9,6 @@ function SpaceHeading() {
         <h4 className="subtitle">Banner subfocus</h4>
         <h2 className="title">Space for heading</h2>
       </div>
-      <a href="" className="btn btn-read">
-        <span>Read recepies</span>
-        <IconArrowRightGreenSmall />
-      </a>
     </div>
   );
 }
