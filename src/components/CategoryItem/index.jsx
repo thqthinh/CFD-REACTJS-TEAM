@@ -1,15 +1,15 @@
 import "./style.scss";
 
-function CategoryItem({children}) {
-    return (
-        <ul className="category__item">
-            <li className="item ">
-            <a href="" className="item-link --green-bold">
-            {children}
-            </a>
-            </li>
-        </ul>
-    )
+function CategoryItem({ children }) {
+  return (
+    <>
+      <li className="category__item ">
+        <a href="" className="category__item-link --green-bold">
+          {children}
+        </a>
+      </li>
+    </>
+  );
 }
 
-export default CategoryItem
+export default CategoryItem;

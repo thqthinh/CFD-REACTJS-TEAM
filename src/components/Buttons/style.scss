@@ -8,6 +8,9 @@
   border: 2px solid #92c064;
   display: inline-block;
   border-radius: var(--radius);
+  font-family: pb;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
 
   &.color {
     &-black {
@@ -15,6 +18,9 @@
     }
     &-white {
       color: $white-cl;
+    }
+    &-green {
+      color: $green-bold;
     }
   }
   &.size {
@@ -42,6 +48,10 @@
       background: $gray-cl;
       border: 2px solid #46760a;
       border: none;
+    }
+    &-transparent {
+      background: transparent;
+      border: 2px solid #46760a;
     }
   }
 

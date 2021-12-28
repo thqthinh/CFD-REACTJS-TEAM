@@ -32,6 +32,9 @@ a {
 .--green-bold {
   color: $green-bold;
 }
+.--black-text {
+  color: $black-text;
+}
 
 // css article (nội dung chi tiết bài viết)
 article {
@@ -137,5 +140,36 @@ article {
   &.--h6 {
     font-size: var(--h6-fs);
     line-height: var(--h6-lh);
+  }
+}
+.desc {
+  font-family: or;
+  &.--bd16 {
+    font-size: var(--body16-fs);
+    line-height: var(--body16-lh);
+  }
+  &.--bd14 {
+    font-size: var(--body14-fs);
+    line-height: var(--body14-lh);
+  }
+  &.--bd12 {
+    font-size: var(--body12-fs);
+    line-height: var(--body12-lh);
+  }
+}
+.bd-gray-12 {
+  border: 1px solid $gray-border;
+  border-radius: 12px;
+}
+.pd__list {
+  --rp: 3;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(var(--rp), 1fr);
+  grid-gap: 0 32px;
+}
+.textbox {
+  .title {
+    font-family: psb;
   }
 }

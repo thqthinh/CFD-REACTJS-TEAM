@@ -1,0 +1,19 @@
+@import "../../assets/styles/styles.scss";
+
+.headline {
+  width: 269px;
+  margin-right: 32px;
+  text-align: left;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  .action {
+    margin-top: 60px;
+  }
+  &-list {
+    margin-top: 16px;
+    .category__item {
+      margin-bottom: 12px;
+    }
+  }
+}

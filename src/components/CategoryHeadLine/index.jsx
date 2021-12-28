@@ -1,26 +1,16 @@
-import CategoryTitle from "../CategoryTitle";
-import CategoryItem from "../CategoryItem";
 import SpaceHeading from "./SpaceHeading";
-import './style.scss';
+import "./style.scss";
+import HeadLineColumn from "../HeadLineColumn";
 
 function CategoryHeadLine() {
   return (
-    <section className="headeline">
-      <div className="container">
-        <div className="headeline__left">
-          <CategoryTitle title="Category menu" />
-          <CategoryItem children="Bakery" />
-          <CategoryItem children="Fruit and vegetables" />
-          <CategoryItem children="Meat and fish" />
-          <CategoryItem children="Drinks" />
-          <CategoryItem children="Kitchen" />
-        </div>
-        <div className="headeline__right">
-          <SpaceHeading />
-          <SpaceHeading />
-        </div>
+    <div className="container">
+      <HeadLineColumn />
+      <div className="headerline__right">
+        <SpaceHeading />
+        <SpaceHeading />
       </div>
-    </section>
+    </div>
   );
 }
 

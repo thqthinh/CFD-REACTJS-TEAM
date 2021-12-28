@@ -10,32 +10,41 @@ function Footer() {
         <div className="footer__top">
           <div className="footer__top-list">
             <CategoryTitle title="Get in touch" />
-            <CategoryItem children="About Us" />
-            <CategoryItem children="Careers" />
-            <CategoryItem children="Press Releases" />
-            <CategoryItem children="Blog" />
+            <ul>
+              <CategoryItem children="About Us" />
+              <CategoryItem children="Careers" />
+              <CategoryItem children="Press Releases" />
+              <CategoryItem children="Blog" />
+            </ul>
           </div>
           <div className="footer__top-list">
             <CategoryTitle title="Connections" />
-            <CategoryItem children="Facebook" />
-            <CategoryItem children="Twitter" />
-            <CategoryItem children="Instagram" />
-            <CategoryItem children="Youtube" />
-            <CategoryItem children="LinkedIn" />
+            <ul>
+              <CategoryItem children="Facebook" />
+              <CategoryItem children="Twitter" />
+              <CategoryItem children="Instagram" />
+              <CategoryItem children="Youtube" />
+              <CategoryItem children="LinkedIn" />
+            </ul>
           </div>
           <div className="footer__top-list">
-            <CategoryTitle title="Earnings" />
-            <CategoryItem children="Become an Affiliate" />
-            <CategoryItem children="Advertise your product" />
-            <CategoryItem children="Sell on Market" />
+              <CategoryTitle title="Earnings" />
+            <ul>
+
+              <CategoryItem children="Become an Affiliate" />
+              <CategoryItem children="Advertise your product" />
+              <CategoryItem children="Sell on Market" />
+            </ul>
           </div>
           <div className="footer__top-list">
             <CategoryTitle title=" Account" />
-            <CategoryItem children="Your account" />
-            <CategoryItem children="Returns Centre" />
-            <CategoryItem children="100 % purchase protection" />
-            <CategoryItem children="Chat with us" />
-            <CategoryItem children="Help" />
+            <ul>
+              <CategoryItem children="Your account" />
+              <CategoryItem children="Returns Centre" />
+              <CategoryItem children="100 % purchase protection" />
+              <CategoryItem children="Chat with us" />
+              <CategoryItem children="Help" />
+            </ul>
           </div>
         </div>
         <div className="footer__bottom">
@@ -147,6 +156,7 @@ function Footer() {
             />
           </div>
         </div>
+        <div className="footer__copyright">Copyright © 2020 petrbilek.com</div>
       </div>
     </div>
   );
