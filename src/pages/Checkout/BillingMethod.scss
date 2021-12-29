@@ -1,0 +1,15 @@
+.billingMethod {
+  .form-wrapper {
+    form {
+      label {
+        &:nth-child(1) {
+          margin: 32px 0 16px;
+          display: block;
+        }
+      }
+      .input {
+        
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.main-row {
+  gap: 32px;
+  .main-column {
+    width: 100%;
+    &.--left {
+      max-width: 670px;
+      flex-shrink: 0;
+    }
+  }
+}

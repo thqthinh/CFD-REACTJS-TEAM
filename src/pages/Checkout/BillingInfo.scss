@@ -1,0 +1,17 @@
+.billinginfo {
+  .form-wrapper {
+    margin-top: 32px;
+    .form-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 32px;
+      .column {
+        width: 100%;
+        label {
+          margin-bottom: 32px;
+          display: block;
+        }
+      }
+    }
+  }
+}

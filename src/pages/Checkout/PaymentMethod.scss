@@ -1,0 +1,25 @@
+@import "../../assets/styles/styles.scss";
+
+.payment {
+  .form__dropdown {
+    padding: 16px;
+    &-row {
+      &:last-child {
+        gap: 32px;
+      }
+      .left {
+        max-width: 350px;
+        flex-shrink: 0;
+      }
+      .right {
+        gap: 16px;
+        .form__dropdown-item {
+          max-width: 120px;
+        }
+      }
+    }
+    &-list {
+      @include transition($t);
+    }
+  }
+}

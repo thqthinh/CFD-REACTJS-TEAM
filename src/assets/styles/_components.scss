@@ -35,6 +35,12 @@ a {
 .--black-text {
   color: $black-text;
 }
+.--gray-cl {
+  color: $gray-cl;
+}
+.--gray-desc {
+  color: $gray-desc;
+}
 
 // css article (nội dung chi tiết bài viết)
 article {
@@ -172,4 +178,8 @@ article {
   .title {
     font-family: psb;
   }
+}
+
+.--flex {
+  display: flex;
 }

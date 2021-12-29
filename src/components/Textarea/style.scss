@@ -1,0 +1,17 @@
+@import "../../assets/styles/styles.scss";
+
+.form-wrapper {
+  textarea {
+    width: 100%;
+    border: 1px solid $gray-border;
+    border-radius: 12px;
+    height: 112px;
+    resize: none;
+    outline: none;
+    padding-top: 11px;
+    padding-left: 16px;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    font-family: or;
+  }
+}

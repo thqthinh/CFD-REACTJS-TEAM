@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../Buttons";
 import Desc from "../Desc";
+import "./style.scss";
 import {
   IconArrowRightWhite,
   IconHeart,
@@ -20,6 +21,7 @@ function ProductDetail({
   price,
   sale = false,
   mainPrice,
+  fontSizeDes,
 }) {
   return (
     <div className="product__detail">
@@ -27,7 +29,7 @@ function ProductDetail({
       <div className="product__detail-text">
         <div className="textbox">
           <div className="title">{title}</div>
-          <Desc>{des}</Desc>
+          <Desc fontSize={fontSizeDes}>{des}</Desc>
           <div className="rate">
             <IconStar />
             <IconStar />
@@ -37,31 +39,31 @@ function ProductDetail({
           </div>
           <ul className="list">
             <li className="list-item">
-              <div className="liright">Fresheness</div>
-              <div className="lileft">{fresh}</div>
-            </li>
-            <li className="list-item">
-              <div className="liright">Farm</div>
-              <div className="lileft">{farm}</div>
-            </li>
-            <li className="list-item">
-              <div className="liright">Delivery</div>
-              <div className="lileft">
-                <span>{delivery}</span>
-                {extra}
+              <div className="liright --gray-desc">Fresheness</div>
+              <div className="lileft --green-bold">
+                {fresh}
+                <span className="--gray-desc"> {extra}</span>
               </div>
             </li>
             <li className="list-item">
-              <div className="liright">Stock</div>
-              <div className="lileft">{stock}</div>
+              <div className="liright --gray-desc">Farm</div>
+              <div className="lileft --gray-desc">{farm}</div>
+            </li>
+            <li className="list-item">
+              <div className="liright --gray-desc">Delivery</div>
+              <div className="lileft --gray-desc">{delivery}</div>
+            </li>
+            <li className="list-item">
+              <div className="liright --gray-desc">Stock</div>
+              <div className="lileft --green-bold">{stock}</div>
             </li>
           </ul>
         </div>
       </div>
       <div className="product__detail-right">
-        <div className="price">{price}</div>
+        <div className="price heading --h5 --black-text">{price}</div>
         {sale && <div className="sale">{mainPrice}</div>}
-        <div className="freeship">
+        <div className="freeship desc --bd12  ">
           <span>Free Shipping</span>
           Delivery in 1 day
         </div>
@@ -77,7 +79,7 @@ function ProductDetail({
           <Button
             children="Product Detail"
             color="black"
-            size="small"
+            size="middle"
             background="gray"
             type="icon-left"
             icon={<IconHeart />}
